@@ -6,7 +6,7 @@
 GET http://blog-api.loc/{{table}}
 ###
 
-GET http://blog-api.loc/{{table}}/{{id}
+GET http://blog-api.loc/{{table}}/{{id}}
 ###
 
 
@@ -16,13 +16,13 @@ Content-Type: application/json
 {{body}}
 ###
 
-PUT http://blog-api.loc/{{table}}/{{id}
+PUT http://blog-api.loc/{{table}}/{{id}}
 Content-Type: application/json
 
 {{body}}
 ###
 
-PATCH http://blog-api.loc/{{table}}/{{id}
+PATCH http://blog-api.loc/{{table}}/{{id}}
 ###
 
-DELETE http://blog-api.loc/{{table}}/{{id}
+DELETE http://blog-api.loc/{{table}}/{{id}}
