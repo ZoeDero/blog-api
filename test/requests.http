@@ -1,0 +1,27 @@
+@table =theme
+
+@id = 5
+@body = {"title": "écologie", "img_src": "https://picsum.photos/id/237/200/300"} 
+
+GET http://blog-api.loc/{{table}}
+###
+
+GET http://blog-api.loc/{{table}}/{{id}
+###
+
+
+POST http://blog-api.loc/{{table}}
+Content-Type: application/json
+
+{{body}}
+###
+
+PUT http://blog-api.loc/{{table}}/{{id}
+Content-type: application/application/json
+{{body}}
+###
+
+PATCH http://blog-api.loc/{{table}}/{{id}
+###
+
+DELETE http://blog-api.loc/{{table}}/{{id}
