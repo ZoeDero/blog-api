@@ -51,12 +51,12 @@ class ThemeController
         }
     
         public function create(){
-            return "Insert a new row in table tag ";
+            return "Insert a new row in table tag ".
             urldecode(http_build_query($this->body, '', ', '));
         }
     
         public function update($id){
-            return "Update row with id =$id in table tag";
+            return "Update row with id =$id in table tag".
             urldecode(http_build_query($this->body, '', ', '));
         }
     

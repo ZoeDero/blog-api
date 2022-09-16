@@ -17,7 +17,8 @@ Content-Type: application/json
 ###
 
 PUT http://blog-api.loc/{{table}}/{{id}
-Content-type: application/application/json
+Content-Type: application/json
+
 {{body}}
 ###
 
