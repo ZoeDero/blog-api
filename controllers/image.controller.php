@@ -1,0 +1,3 @@
+ <?php classImagecontroller extends DatabaseController {
+
+}?>

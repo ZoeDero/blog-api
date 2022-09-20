@@ -1,0 +1,3 @@
+ <?php classArticlecontroller extends DatabaseController {
+
+}?>

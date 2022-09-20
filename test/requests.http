@@ -1,7 +1,10 @@
 @table =theme
 
-@id = 5
+@id = 2
 @body = {"title": "écologie", "img_src": "https://picsum.photos/id/237/200/300"} 
+
+GET http://blog-api.loc/init
+###
 
 GET http://blog-api.loc/{{table}}
 ###

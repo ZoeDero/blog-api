@@ -1,0 +1,3 @@
+ <?php classAccountcontroller extends DatabaseController {
+
+}?>

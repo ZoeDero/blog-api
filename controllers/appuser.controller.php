@@ -1,0 +1,3 @@
+ <?php classAppusercontroller extends DatabaseController {
+
+}?>

@@ -1,0 +1,3 @@
+ <?php classCommentcontroller extends DatabaseController {
+
+}?>
