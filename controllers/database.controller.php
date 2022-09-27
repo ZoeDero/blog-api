@@ -69,7 +69,7 @@ abstract class DatabaseController
             $rows= $this->getAll();
             $sub_rows = [];
                 foreach($with as $table){
-                    $dbs = new DatabasService($table);
+                    $dbs = new DatabaseService($table);
                     $table_rows = $dbs->selectAll();
                     $sub_rows[$table] = $table_rows;
                 }
@@ -88,7 +88,7 @@ abstract class DatabaseController
                 $table_rows = $dbs->selectAll();
                 $sub_rows[$table] = $table_rows;
             }
-            $this->affectDataToRow($row, $sub_rows);
+            $this-> affectDataToRow($row, $sub_rows);
             return $row;
 
         }
@@ -105,18 +105,18 @@ abstract class DatabaseController
             urldecode(http_build_query($this->body, '', ', '));
         }
     
-        // public function update($id){
-        //     return "Update row with id =$id in table tag".
-        //     urldecode(http_build_query($this->body, '', ', '));
-        // }
+        public function update($id){
+            return "Update row with id =$id in table tag".
+            urldecode(http_build_query($this->body, '', ', '));
+        }
     
-        // public function softDelete($id){
-        //     return "Delete (soft) row with id = $id in table tag";
-        // }
+        public function softDelete($id){
+            return "Delete (soft) row with id = $id in table tag";
+        }
     
-        // public function hardDelete($id){
-        //     return "Delete (hard) row with id = $id in table tag";
-        // }
+        public function hardDelete($id){
+            return "Delete (hard) row with id = $id in table tag";
+        }
       
     
 }
