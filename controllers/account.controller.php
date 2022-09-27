@@ -1,3 +1,3 @@
- <?php classAccountcontroller extends DatabaseController {
-
-}?>
+<?php
+class AccountController extends DatabaseController {}
+?>

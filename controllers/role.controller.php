@@ -1,3 +1,3 @@
- <?php classRolecontroller extends DatabaseController {
-
-}?>
+<?php
+class RoleController extends DatabaseController {}
+?>

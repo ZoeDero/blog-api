@@ -1,3 +1,3 @@
- <?php classCommentcontroller extends DatabaseController {
-
-}?>
+<?php
+class CommentController extends DatabaseController {}
+?>

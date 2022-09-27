@@ -1,7 +1,7 @@
-@table =theme
+@table =appuser
 
-@id = 2
-@body = {"title": "écologie", "img_src": "https://picsum.photos/id/237/200/300"} 
+@id = 1
+@body = {"with":["account, "role"]} 
 
 GET http://blog-api.loc/init
 ###
@@ -13,7 +13,7 @@ GET http://blog-api.loc/{{table}}/{{id}}
 ###
 
 
-POST http://blog-api.loc/{{table}}
+POST http://blog-api.loc/{{table}}/0
 Content-Type: application/json
 
 {{body}}

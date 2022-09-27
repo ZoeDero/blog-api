@@ -1,3 +1,3 @@
- <?php classThemecontroller extends DatabaseController {
-
-}?>
+<?php
+class ThemeController extends DatabaseController {}
+?>

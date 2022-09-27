@@ -1,3 +1,3 @@
- <?php classArticle_tagcontroller extends DatabaseController {
-
-}?>
+<?php
+class Article_tagController extends DatabaseController {}
+?>

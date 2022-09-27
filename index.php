@@ -27,7 +27,8 @@ if($_ENV["current"]=="dev" && $controllerName == 'init'){
     foreach($rows as $tableName){
         $controllerFile ="controllers/$tableName.controller.php";
         if(!file_exists($controllerFile)){
-            $fileContent = " <?php class".ucfirst($tableName)."controller extends DatabaseController {\r\n\r\n}?>";
+            $fileContent = 
+        "<?php\n\rclass ".ucfirst($tableName)."Controller extends DatabaseController {}\n\r?>";
             file_put_contents($controllerFile, $fileContent);
             echo ucfirst($tableName)."Controllers created\r\n";
 
