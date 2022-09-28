@@ -1,3 +1,9 @@
 <?php
-class CommentController extends DatabaseController {}
-?>
+
+class CommentController extends DatabaseController {
+    public function affectDataToRow(&$row, $sub_rows){
+
+    }
+}
+
+?>

@@ -1,3 +1,10 @@
 <?php
-class TagController extends DatabaseController {}
-?>
+
+class TagController extends DatabaseController {
+
+    public function affectDataToRow(&$row, $sub_rows){
+
+    }
+}
+
+?>

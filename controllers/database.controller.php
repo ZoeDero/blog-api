@@ -2,8 +2,10 @@
 
 abstract class DatabaseController
 {
+    public abstract function affectDataToRow(&$row, $sub_rows);
    
     public function __construct($params){
+        
         
         
         $id = array_shift($params);
@@ -26,7 +28,7 @@ abstract class DatabaseController
             $this->action = $this->getAll();
         } 
         
-        if($_SERVER['REQUEST_METHOD'] == "POST")
+        if($_SERVER['REQUEST_METHOD'] == "POST" && !isset($id))
         {
             $this->action = $this->create();
     

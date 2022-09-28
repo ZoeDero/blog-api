@@ -17,26 +17,6 @@ $route = filter_var($route, FILTER_SANITIZE_URL);
 $route = explode('/', $route);
 
 $controllerName = array_shift($route);
-if($_ENV["current"]=="dev" && $controllerName == 'init'){
-    
-    $dbs = new DatabaseService(null);
-    $query_resp = $dbs->query("SELECT table_name FROM information_schema.tables WHERE table_schema = ?", ['db_blog']);
-    $result = $query_resp->result;
-    $rows = $query_resp->statement->fetchAll(PDO::FETCH_COLUMN);
-
-    foreach($rows as $tableName){
-        $controllerFile ="controllers/$tableName.controller.php";
-        if(!file_exists($controllerFile)){
-            $fileContent = 
-        "<?php\n\rclass ".ucfirst($tableName)."Controller extends DatabaseController {}\n\r?>";
-            file_put_contents($controllerFile, $fileContent);
-            echo ucfirst($tableName)."Controllers created\r\n";
-
-        }
-    }
-    echo 'api initialized';
-}
-
 $controllerFilePath = "controllers/$controllerName.controller.php";
 
 if(!file_exists($controllerFilePath)){

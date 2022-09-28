@@ -1,3 +1,9 @@
 <?php
-class AccountController extends DatabaseController {}
-?>
+
+class AccountController extends DatabaseController {
+    public function affectDataToRow(&$row, $sub_rows){
+
+    }
+}
+
+?>

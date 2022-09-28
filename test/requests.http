@@ -1,7 +1,7 @@
-@table =appuser
+@table =comment
 
 @id = 1
-@body = {"with":["account, "role"]} 
+@body = {"with":["account", "role","article","comment"]} 
 
 GET http://blog-api.loc/init
 ###
